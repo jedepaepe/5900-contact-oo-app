@@ -34,4 +34,14 @@ public class ContactUI implements IContactUI {
         scanner.nextLine();
         return id;
     }
+
+    @Override
+    public String showMenu() {
+        System.out.println("(1) pour lister les contacts");
+        System.out.println("(2) pour ajouter un contact");
+        System.out.println("(3) pour modifier un contact");
+        System.out.println("(4) pour supprimer un contact");
+        System.out.println("(S) pour stopper l'application");
+        return scanner.nextLine();
+    }
 }

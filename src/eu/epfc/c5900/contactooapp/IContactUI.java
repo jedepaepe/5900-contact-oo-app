@@ -6,4 +6,5 @@ public interface IContactUI {
     void displayList(List<Contact> contacts);
     Contact displayForm();
     int askId();
+    String showMenu();
 }
